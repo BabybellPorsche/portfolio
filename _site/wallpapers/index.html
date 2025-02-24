@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallpapers - Samuel Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="description" content="Download gratis iPhone wallpapers.">
+  <!-- Font Awesome voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar Navigatie -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <a href="/" class="logo">Samuel</a>
+    </div>
+    
+    <!-- Mobiele sluitknop -->
+    <button id="close-sidebar" class="close-btn" aria-label="Menu sluiten">
+      <i class="fas fa-times"></i>
+    </button>
+    
+    <ul class="sidebar-menu">
+      <li><a href="/" >Portfolio</a></li>
+      <li><a href="/about/" >Over mij</a></li>
+      <li><a href="/contact/" >Contact</a></li>
+      <li class="menu-divider"></li>
+      <li><a href="/fuji-sims/" >Fuji Simulaties</a></li>
+      <li><a href="/wallpapers/" class="active">Wallpapers</a></li>
+    </ul>
+  </nav>
+
+  <!-- Overlay voor mobiele sidebar -->
+  <div id="overlay"></div>
+
+  <!-- Header (alleen op mobiel) -->
+  <header id="mobile-header">
+    <button id="open-sidebar" class="menu-btn" aria-label="Menu openen">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="mobile-logo">
+      <a href="/">Samuel</a>
+    </div>
+  </header>
+
+  <!-- Hoofdcontent -->
+  <main id="content">
+    
+<section class="hero">
+  <h1>iPhone Wallpapers</h1>
+  <p>Download gratis wallpapers voor je smartphone.</p>
+</section>
+
+<p>Deze pagina is in ontwikkeling. Binnenkort vind je hier mijn collectie iPhone wallpapers om te downloaden.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Samuel. Alle rechten voorbehouden.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

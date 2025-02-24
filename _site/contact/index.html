@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Samuel Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="description" content="Neem contact op met Samuel voor samenwerkingen of vragen.">
+  <!-- Font Awesome voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar Navigatie -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <a href="/" class="logo">Samuel</a>
+    </div>
+    
+    <!-- Mobiele sluitknop -->
+    <button id="close-sidebar" class="close-btn" aria-label="Menu sluiten">
+      <i class="fas fa-times"></i>
+    </button>
+    
+    <ul class="sidebar-menu">
+      <li><a href="/" >Portfolio</a></li>
+      <li><a href="/about/" >Over mij</a></li>
+      <li><a href="/contact/" class="active">Contact</a></li>
+      <li class="menu-divider"></li>
+      <li><a href="/fuji-sims/" >Fuji Simulaties</a></li>
+      <li><a href="/wallpapers/" >Wallpapers</a></li>
+    </ul>
+  </nav>
+
+  <!-- Overlay voor mobiele sidebar -->
+  <div id="overlay"></div>
+
+  <!-- Header (alleen op mobiel) -->
+  <header id="mobile-header">
+    <button id="open-sidebar" class="menu-btn" aria-label="Menu openen">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="mobile-logo">
+      <a href="/">Samuel</a>
+    </div>
+  </header>
+
+  <!-- Hoofdcontent -->
+  <main id="content">
+    
+<section class="contact-section">
+  <h1>Contact</h1>
+  
+  <p class="contact-intro">Heb je een vraag of ben je geïnteresseerd in een samenwerking? Neem gerust contact met me op.</p>
+  
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h2>Contact informatie</h2>
+      
+      <div class="contact-methods">
+        <div class="contact-method">
+          <h3>Email</h3>
+          <p><a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+        
+        <div class="contact-method">
+          <h3>Instagram</h3>
+          <p><a href="https://instagram.com/username" target="_blank">@username</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contact-form-container">
+      <h2>Stuur een bericht</h2>
+      
+      <form class="contact-form" action="https://formspree.io/f/your-formspree-id" method="POST">
+        <div class="form-group">
+          <label for="name">Naam</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Bericht</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Versturen</button>
+      </form>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Samuel. Alle rechten voorbehouden.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

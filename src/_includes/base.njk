@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - Samuel Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="description" content="{{ description }}">
+  <!-- Font Awesome voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar Navigatie -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <a href="/" class="logo">Samuel</a>
+    </div>
+    
+    <!-- Mobiele sluitknop -->
+    <button id="close-sidebar" class="close-btn" aria-label="Menu sluiten">
+      <i class="fas fa-times"></i>
+    </button>
+    
+    <ul class="sidebar-menu">
+      <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Portfolio</a></li>
+      <li><a href="/about/" {% if page.url == "/about/" %}class="active"{% endif %}>Over mij</a></li>
+      <li><a href="/contact/" {% if page.url == "/contact/" %}class="active"{% endif %}>Contact</a></li>
+      <li class="menu-divider"></li>
+      <li><a href="/fuji-sims/" {% if page.url == "/fuji-sims/" %}class="active"{% endif %}>Fuji Simulaties</a></li>
+      <li><a href="/wallpapers/" {% if page.url == "/wallpapers/" %}class="active"{% endif %}>Wallpapers</a></li>
+    </ul>
+  </nav>
+
+  <!-- Overlay voor mobiele sidebar -->
+  <div id="overlay"></div>
+
+  <!-- Header (alleen op mobiel) -->
+  <header id="mobile-header">
+    <button id="open-sidebar" class="menu-btn" aria-label="Menu openen">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="mobile-logo">
+      <a href="/">Samuel</a>
+    </div>
+  </header>
+
+  <!-- Hoofdcontent -->
+  <main id="content">
+    {{ content | safe }}
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Samuel. Alle rechten voorbehouden.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

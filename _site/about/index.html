@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over mij - Samuel Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="description" content="Leer meer over Samuel - fotograaf en visueel kunstenaar.">
+  <!-- Font Awesome voor iconen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar Navigatie -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <a href="/" class="logo">Samuel</a>
+    </div>
+    
+    <!-- Mobiele sluitknop -->
+    <button id="close-sidebar" class="close-btn" aria-label="Menu sluiten">
+      <i class="fas fa-times"></i>
+    </button>
+    
+    <ul class="sidebar-menu">
+      <li><a href="/" >Portfolio</a></li>
+      <li><a href="/about/" class="active">Over mij</a></li>
+      <li><a href="/contact/" >Contact</a></li>
+      <li class="menu-divider"></li>
+      <li><a href="/fuji-sims/" >Fuji Simulaties</a></li>
+      <li><a href="/wallpapers/" >Wallpapers</a></li>
+    </ul>
+  </nav>
+
+  <!-- Overlay voor mobiele sidebar -->
+  <div id="overlay"></div>
+
+  <!-- Header (alleen op mobiel) -->
+  <header id="mobile-header">
+    <button id="open-sidebar" class="menu-btn" aria-label="Menu openen">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="mobile-logo">
+      <a href="/">Samuel</a>
+    </div>
+  </header>
+
+  <!-- Hoofdcontent -->
+  <main id="content">
+    
+<section class="about-section">
+  <h1>Over mij</h1>
+  
+  <div class="about-content">
+    <div class="about-image">
+      <img src="https://source.unsplash.com/400x600?portrait" alt="Portret van Samuel">
+    </div>
+    
+    <div class="about-text">
+      <p>Welkom op mijn portfolio. Ik ben Samuel, een fotograaf met een passie voor het vastleggen van unieke momenten en perspectieven.</p>
+      
+      <p>Mijn werk kenmerkt zich door een minimalistische benadering met een sterke focus op compositie en licht. Ik streef ernaar om in elk beeld een verhaal te vertellen.</p>
+      
+      <p>Met mijn achtergrond in digitale fotografie zoek ik voortdurend naar nieuwe uitdagingen en projecten. Ik heb gewerkt aan verschillende opdrachten, van landschapsfotografie tot portretten en stadsgezichten.</p>
+      
+      <h2>Expertise</h2>
+      <ul class="skills-list">
+        <li>Landschapsfotografie</li>
+        <li>Portretfotografie</li>
+        <li>Stedelijke fotografie</li>
+        <li>Minimalistisch ontwerp</li>
+        <li>Fotobewerking</li>
+      </ul>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Samuel. Alle rechten voorbehouden.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
